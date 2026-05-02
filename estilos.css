@@ -17,6 +17,9 @@ body {
     position: relative;
     height: 100vh;
     font-weight: 400;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .derecha { float: right; }
