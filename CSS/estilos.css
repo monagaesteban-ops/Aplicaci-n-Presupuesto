@@ -65,6 +65,7 @@ body {
 .presupuesto_egreso {
     padding: 12px;
     text-transform: uppercase;
+    border-radius: 5px;
 }
 
 .presupuesto_ingreso {
@@ -256,3 +257,181 @@ h2 {
 .elemento:hover .elemento_eliminar--btn { display: block; }
 .elemento:hover .elemento_valor { transform: translateX(-20px); }
 .elemento:hover .elemento_porcentaje { transform: translateX(-20px); }
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 900px) {
+
+    .contenedor {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .ingreso,
+    .egreso {
+        width: 48%;
+        margin-right: 0;
+    }
+
+    .ingreso {
+        margin-right: 4%;
+    }
+
+    .agregar_descripcion {
+        width: 45%;
+    }
+
+}
+
+
+/* Móviles */
+@media (max-width: 600px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .cabecero {
+        height: 35vh;
+        min-height: 280px;
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    .presupuesto {
+        width: 90%;
+    }
+
+    .presupuesto_titulo {
+        font-size: 18px;
+    }
+
+    .presupuesto_valor {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .presupuesto_ingreso,
+    .presupuesto_egreso {
+        padding: 10px;
+    }
+
+
+    /* Formulario */
+
+    .agregar {
+        padding: 12px;
+    }
+
+    .agregar_contenedor {
+        width: 100%;
+    }
+
+    .agregar_tipo {
+        width: 50px;
+        margin-right: 5px;
+    }
+
+    .agregar_descripcion {
+        width: calc(100% - 145px);
+        margin-right: 5px;
+    }
+
+    .agregar_valor {
+        width: 80px;
+        margin-right: 5px;
+    }
+
+    .agregar_btn {
+        font-size: 30px;
+        margin-left: 3px;
+    }
+
+
+    /* Listas */
+
+    .contenedor {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .ingreso,
+    .egreso {
+        float: none;
+        width: 100%;
+        margin: 0 0 35px 0;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    .elemento {
+        padding: 12px 8px;
+    }
+
+}
+
+
+/* Móviles pequeños */
+@media (max-width: 400px) {
+
+    .presupuesto_valor {
+        font-size: 30px;
+    }
+
+    .presupuesto_ingreso--texto,
+    .presupuesto_egreso--texto {
+        font-size: 11px;
+    }
+
+    .presupuesto_ingreso--valor,
+    .presupuesto_egreso--valor {
+        font-size: 13px;
+    }
+
+    .presupuesto_ingreso--porcentaje,
+    .presupuesto_egreso--porcentaje {
+        width: 30px;
+        margin-left: 5px;
+    }
+
+    .agregar_tipo {
+        width: 45px;
+    }
+
+    .agregar_descripcion {
+        width: calc(100% - 125px);
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .agregar_valor {
+        width: 65px;
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .agregar_btn {
+        font-size: 27px;
+    }
+
+    .elemento_descripcion {
+        max-width: 45%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .elemento_valor {
+        margin-left: 5px;
+    }
+
+    .elemento_porcentaje {
+        margin-left: 8px;
+    }
+
+}
