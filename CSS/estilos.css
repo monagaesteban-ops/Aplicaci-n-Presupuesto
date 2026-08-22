@@ -119,9 +119,9 @@ body {
 }
 
 .agregar_tipo {
-    width: 55px;
+    width: 50px;
     border: 1px solid #e7e7e7;
-    height: 44px;
+    border-radius: 5px;
     font-size: 18px;
     color: inherit;
     background-color: #fff;
@@ -332,6 +332,8 @@ h2 {
 
     .agregar_tipo {
         width: 50px;
+        height: 25px;
+        border-radius: 5px;
         margin-right: 5px;
     }
 
@@ -399,9 +401,13 @@ h2 {
         margin-left: 5px;
     }
 
+    
     .agregar_tipo {
         width: 45px;
+        height: 25px;
+        border-radius: 5px;
     }
+
 
     .agregar_descripcion {
         width: calc(100% - 125px);
